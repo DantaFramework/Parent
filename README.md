@@ -12,6 +12,13 @@ LayerX - Parent Project is the maven parent project to all LayerX projects.
  * AEM 6.2 or later (for integration with AEM)
  * Jahia 7.2 or later (for integration with Jahia)
 
+## Child Bundles
+
+ * [LayerX - API Project](https://github.com/layerx/API)
+ * [LayerX - Core Project](https://github.com/layerx/Core)
+ * [LayerX - AEM Project](https://github.com/layerx/AEM)
+ * [LayerX - JahiaDF Project](https://github.com/layerx/JahiaDF)
+
 ## License
 
 Read [License](LICENSE) for more licensing information.
