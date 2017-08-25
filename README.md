@@ -1,10 +1,10 @@
-# LayerX - Parent Project
+# Danta - Parent Project
 
-LayerX - Parent Project is the maven parent project to all LayerX projects.
+Danta - Parent Project is the maven parent project to all Danta projects.
 
 ## Documentation
 
- * Read our [official documentation](http://layerx.technologies.io/docs/) for more information.
+ * Read our [official documentation](http://danta.technologies.io/docs/) for more information.
 
 ## Prerequisites
 
@@ -14,10 +14,10 @@ LayerX - Parent Project is the maven parent project to all LayerX projects.
 
 ## Child Bundles
 
- * [LayerX - API Project](https://github.com/layerx/API)
- * [LayerX - Core Project](https://github.com/layerx/Core)
- * [LayerX - AEM Project](https://github.com/layerx/AEM)
- * [LayerX - JahiaDF Project](https://github.com/layerx/JahiaDF)
+ * [Danta - API Project](https://github.com/danta/API)
+ * [Danta - Core Project](https://github.com/danta/Core)
+ * [Danta - AEM Project](https://github.com/danta/AEM)
+ * [Danta - JahiaDF Project](https://github.com/danta/JahiaDF)
 
 ## License
 

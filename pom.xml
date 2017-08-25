@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-- LayerX Parent Bundle
+- Danta Parent Bundle
 -
 - Copyright (C) 2017 Tikal Technologies, Inc. All rights reserved.
 -
@@ -20,7 +20,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>LayerX</groupId>
+    <groupId>Danta</groupId>
     <artifactId>Parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -34,8 +34,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <!-- nexus properties -->
-        <nexus.dev.url>http://54.236.230.120/nexus/content/repositories/layerx-development</nexus.dev.url>
-        <nexus.staging.url>http://54.236.230.120/nexus/content/repositories/layerx-staging</nexus.staging.url>
+        <nexus.dev.url>http://54.236.230.120/nexus/content/repositories/danta-development</nexus.dev.url>
+        <nexus.staging.url>http://54.236.230.120/nexus/content/repositories/danta-staging</nexus.staging.url>
         <!--jgitflow properties -->
         <project.dev.version></project.dev.version>
         <project.release.version></project.release.version>
@@ -159,7 +159,7 @@
                                     <goal>deploy-file</goal>
                                 </goals>
                                 <configuration>
-                                    <repositoryId>layerx-development</repositoryId>
+                                    <repositoryId>danta-development</repositoryId>
                                     <packaging>pom</packaging>
                                     <generatePom>true</generatePom>
                                     <url>${nexus.dev.url}</url>
@@ -191,7 +191,7 @@
                                     <goal>deploy-file</goal>
                                 </goals>
                                 <configuration>
-                                    <repositoryId>layerx-staging</repositoryId>
+                                    <repositoryId>danta-staging</repositoryId>
                                     <packaging>pom</packaging>
                                     <generatePom>true</generatePom>
                                     <url>${nexus.staging.url}</url>
@@ -223,7 +223,7 @@
                                     <goal>deploy-file</goal>
                                 </goals>
                                 <configuration>
-                                    <repositoryId>layerx-development</repositoryId>
+                                    <repositoryId>danta-development</repositoryId>
                                     <packaging>jar</packaging>
                                     <generatePom>true</generatePom>
                                     <url>${nexus.dev.url}</url>
@@ -255,7 +255,7 @@
                                     <goal>deploy-file</goal>
                                 </goals>
                                 <configuration>
-                                    <repositoryId>layerx-staging</repositoryId>
+                                    <repositoryId>danta-staging</repositoryId>
                                     <packaging>jar</packaging>
                                     <generatePom>true</generatePom>
                                     <url>${nexus.staging.url}</url>
@@ -464,11 +464,11 @@
     </repositories>
     <distributionManagement>
         <snapshotRepository>
-            <id>layerx-development</id>
+            <id>danta-development</id>
             <url>${nexus.dev.url}</url>
         </snapshotRepository>
         <repository>
-            <id>layerx-staging</id>
+            <id>danta-staging</id>
             <url>${nexus.staging.url}</url>
         </repository>
     </distributionManagement>
