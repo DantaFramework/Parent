@@ -14,10 +14,10 @@ Danta - Parent Project is the maven parent project to all Danta projects.
 
 ## Child Bundles
 
- * [Danta - API Project](https://github.com/danta/API)
- * [Danta - Core Project](https://github.com/danta/Core)
- * [Danta - AEM Project](https://github.com/danta/AEM)
- * [Danta - JahiaDF Project](https://github.com/danta/JahiaDF)
+ * [Danta - API Project](https://github.com/DataFramework/API)
+ * [Danta - Core Project](https://github.com/DataFramework/Core)
+ * [Danta - AEM Project](https://github.com/DataFramework/AEM)
+ * [Danta - JahiaDF Project](https://github.com/DataFramework/JahiaDF)
 
 ## License
 
@@ -30,3 +30,9 @@ Read [here](CONTRIBUTING.md) for more information.
 ## Compile
 
     mvn clean install
+    
+    
+## Credit
+
+Special thanks to Jose Alvarez, who named Danta for the powerful ancient Mayan pyramid, La Danta. 
+La Danta is the largest pyramid in El Mirador—the biggest Mayan city found in Petén, Guatemala.
