@@ -1,5 +1,7 @@
 # Danta - Parent Project
 
+Danta is the agnostic multi-platform templating engine. enables developers and IT teams to use technologies they already know, expediting the creation and leveraging of reusable technical assets.
+
 Danta - Parent Project is the maven parent project to all Danta projects.
 
 ## Documentation
