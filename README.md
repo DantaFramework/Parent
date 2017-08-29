@@ -4,7 +4,7 @@ Danta - Parent Project is the maven parent project to all Danta projects.
 
 ## Documentation
 
- * Read our [official documentation](http://danta.technologies.io/docs/) for more information.
+ * Read our [official documentation](http://danta.technologies.io/) for more information.
 
 ## Prerequisites
 
