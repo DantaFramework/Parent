@@ -16,10 +16,10 @@ Danta - Parent Project is the maven parent project to all Danta projects.
 
 ## Child Bundles
 
- * [Danta - API Project](https://github.com/DataFramework/API)
- * [Danta - Core Project](https://github.com/DataFramework/Core)
- * [Danta - AEM Project](https://github.com/DataFramework/AEM)
- * [Danta - JahiaDF Project](https://github.com/DataFramework/JahiaDF)
+ * [Danta - API Project](https://github.com/DantaFramework/API)
+ * [Danta - Core Project](https://github.com/DantaFramework/Core)
+ * [Danta - AEM Project](https://github.com/DantaFramework/AEM)
+ * [Danta - JahiaDF Project](https://github.com/DantaFramework/JahiaDF)
 
 ## License
 
