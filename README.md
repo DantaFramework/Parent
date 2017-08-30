@@ -15,7 +15,7 @@ Danta - Parent Project is the maven parent project to all Danta projects.
 
 ### Installation
 
-#### Adobe Experience Manager (AEM)
+##### Adobe Experience Manager (AEM)
 
   * Clone the following repositories into the same folder (i.e. C:\workspace\danta or /User/{username}/workspace/danta)
     * [Parent](https://github.com/DantaFramework/Parent)
@@ -30,7 +30,7 @@ Danta - Parent Project is the maven parent project to all Danta projects.
     * [AEM](https://github.com/DantaFramework/AEM)
     * [AEM Demo](https://github.com/DantaFramework/AEMDemo)
 
-### Jahia
+#### Jahia
 
   * Clone the following repositories into the same folder (i.e. C:\workspace\danta or /User/{username}/workspace/danta)
     * [Parent](https://github.com/DantaFramework/Parent)
