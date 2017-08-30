@@ -25,6 +25,8 @@ Danta - Parent Project is the maven parent project to all Danta projects.
     * [Core](https://github.com/DantaFramework/Core)
     * [AEM](https://github.com/DantaFramework/AEM)
     * [AEM Demo](https://github.com/DantaFramework/AEMDemo)   
+    
+    **Note: for fresh installation, make sure to install ACS Common before running the maven build command**
 
 ### Jahia
 
