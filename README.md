@@ -44,7 +44,7 @@ Danta - Parent Project is the maven parent project to all Danta projects.
     * [JahiaDF](https://github.com/DantaFramework/JahiaDF)
     * [JahiaDF Demo](https://github.com/DantaFramework/JahiaDFDemo)
 
-**For maven build command, refer to Compile Section of README.md, for each repository**
+**For maven build command, refer to Compile section of README.md of each repository**
 
 ### Official documentation
 
