@@ -4,10 +4,6 @@ Danta is the agnostic multi-platform templating engine. enables developers and I
 
 Danta - Parent Project is the maven parent project to all Danta projects.
 
-## Documentation
-
- * Read our [official documentation](http://danta.tikaltechnologies.io/docs) for more information.
-
 ## Prerequisites
 
  * Java 8
@@ -15,12 +11,44 @@ Danta - Parent Project is the maven parent project to all Danta projects.
  * For AEM only: [ACS AEM Commons 3.9.0](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases/tag/acs-aem-commons-3.9.0) or later
  * Jahia 7.2 or later (for integration with Jahia)
 
-## Child Bundles
+## Documentation
 
- * [Danta - API Project](https://github.com/DantaFramework/API)
- * [Danta - Core Project](https://github.com/DantaFramework/Core)
- * [Danta - AEM Project](https://github.com/DantaFramework/AEM)
- * [Danta - JahiaDF Project](https://github.com/DantaFramework/JahiaDF)
+### Installation
+
+#### Adobe Experience Manager (AEM)
+
+  * Clone the following repositories into the same folder (i.e. C:\workspace\danta or /User/{username}/workspace/danta)
+    * [Parent](https://github.com/DantaFramework/Parent)
+    * [API](https://github.com/DantaFramework/API)
+    * [Core](https://github.com/DantaFramework/Core)
+    * [AEM](https://github.com/DantaFramework/AEM)
+  * Via AEM Package Manager, install [ACS AEM Commons 3.9.0](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases/tag/acs-aem-commons-3.9.0) or later
+  * Run maven build command in the following order
+    * [Parent](https://github.com/DantaFramework/Parent)
+    * [API](https://github.com/DantaFramework/API)
+    * [Core](https://github.com/DantaFramework/Core)
+    * [AEM](https://github.com/DantaFramework/AEM)
+    * [AEM Demo](https://github.com/DantaFramework/AEMDemo)
+
+### Jahia
+
+  * Clone the following repositories into the same folder (i.e. C:\workspace\danta or /User/{username}/workspace/danta)
+    * [Parent](https://github.com/DantaFramework/Parent)
+    * [API](https://github.com/DantaFramework/API)
+    * [Core](https://github.com/DantaFramework/Core)
+    * [AEM](https://github.com/DantaFramework/AEM)
+  * Run maven build command (refer to Compile Section of README.md, for each repository) in the following order
+    * [Parent](https://github.com/DantaFramework/Parent)
+    * [API](https://github.com/DantaFramework/API)
+    * [Core](https://github.com/DantaFramework/Core)
+    * [AEM](https://github.com/DantaFramework/AEM)
+    * [JahiaDF Demo](https://github.com/DantaFramework/JahiaDFDemo)
+
+**For maven build command, refer to Compile Section of README.md, for each repository**
+
+### Official documentation
+
+ * Read our [official documentation](http://danta.tikaltechnologies.io/docs) for more information.
 
 ## License
 
