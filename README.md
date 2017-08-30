@@ -17,36 +17,24 @@ Danta - Parent Project is the maven parent project to all Danta projects.
 
 #### Adobe Experience Manager (AEM)
 
-  * Clone the following repositories into the same folder (i.e. C:\workspace\danta or /User/{username}/workspace/danta)
-    * [Parent](https://github.com/DantaFramework/Parent)
-    * [API](https://github.com/DantaFramework/API)
-    * [Core](https://github.com/DantaFramework/Core)
-    * [AEM](https://github.com/DantaFramework/AEM)
   * Via AEM Package Manager, install [ACS AEM Commons 3.9.0](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases/tag/acs-aem-commons-3.9.0) or later
-  * Run maven build command in the following order
+  * Clone the following repositories into the same folder (i.e. C:\workspace\danta or /User/{username}/workspace/danta) 
+  then run the maven build command (refer to **Compile** section of README.md, for each repository) in the following order
     * [Parent](https://github.com/DantaFramework/Parent)
     * [API](https://github.com/DantaFramework/API)
     * [Core](https://github.com/DantaFramework/Core)
     * [AEM](https://github.com/DantaFramework/AEM)
-    * [AEM Demo](https://github.com/DantaFramework/AEMDemo)
-    
-    *For maven build command, refer to Compile section of README.md of each repository*
+    * [AEM Demo](https://github.com/DantaFramework/AEMDemo)   
 
 ### Jahia
 
-  * Clone the following repositories into the same folder (i.e. C:\workspace\danta or /User/{username}/workspace/danta)
-    * [Parent](https://github.com/DantaFramework/Parent)
-    * [API](https://github.com/DantaFramework/API)
-    * [Core](https://github.com/DantaFramework/Core)
-    * [JahiaDF](https://github.com/DantaFramework/JahiaDF)
-  * Run maven build command (refer to Compile Section of README.md, for each repository) in the following order
+  * Clone the following repositories into the same folder (i.e. C:\workspace\danta or /User/{username}/workspace/danta) 
+    then run the maven build command (refer to **Compile** section of README.md, for each repository) in the following order
     * [Parent](https://github.com/DantaFramework/Parent)
     * [API](https://github.com/DantaFramework/API)
     * [Core](https://github.com/DantaFramework/Core)
     * [JahiaDF](https://github.com/DantaFramework/JahiaDF)
     * [JahiaDF Demo](https://github.com/DantaFramework/JahiaDFDemo)
-
-    *For maven build command, refer to Compile section of README.md of each repository*
 
 ### Official documentation
 
