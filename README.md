@@ -12,6 +12,7 @@ Danta - Parent Project is the maven parent project to all Danta projects.
 
  * Java 8
  * AEM 6.2 or later (for integration with AEM)
+ * For AEM only: [ACS AEM Commons 3.10.0](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases/tag/acs-aem-commons-3.10.0)
  * Jahia 7.2 or later (for integration with Jahia)
 
 ## Child Bundles
