@@ -33,11 +33,11 @@ Danta - Parent Project is the maven parent project to all Danta projects.
 
   * Clone the following repositories into the same folder (i.e. C:\workspace\danta or /User/{username}/workspace/danta) 
     then run the maven build command (refer to **Compile** section of README.md, for each repository) in the following order
-    * [JahiaDF Demo](https://github.com/DantaFramework/JahiaDFDemo)
     * [Parent](https://github.com/DantaFramework/Parent)
     * [API](https://github.com/DantaFramework/API)
     * [Core](https://github.com/DantaFramework/Core)
     * [JahiaDF](https://github.com/DantaFramework/JahiaDF)
+    * [JahiaDF Demo](https://github.com/DantaFramework/JahiaDFDemo)
 
 ### Official documentation
 
