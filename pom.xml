@@ -204,6 +204,37 @@
                 </plugins>
             </build>
         </profile>
+        <!-- This profile deploys a ZIP to nexus snapshots repository -->
+        <profile>
+            <id>deploy-zip-nexus</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-deploy-plugin</artifactId>
+                        <version>2.8.2</version>
+                        <executions>
+                            <execution>
+                                <id>deploy-package</id>
+                                <phase>install</phase>
+                                <goals>
+                                    <goal>deploy-file</goal>
+                                </goals>
+                                <configuration>
+                                    <repositoryId>danta-snapshots</repositoryId>
+                                    <packaging>zip</packaging>
+                                    <url>${nexus.snapshots.url}</url>
+                                    <artifactId>${project.artifactId}</artifactId>
+                                    <groupId>${project.groupId}</groupId>
+                                    <version>${project.version}</version>
+                                    <file>target/${project.artifactId}-${project.version}.zip</file>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
         <!-- This profile deploys a JAR to nexus releases repository -->
         <profile>
             <id>deploy-nexus-release</id>
@@ -261,6 +292,37 @@
                                     <groupId>${project.groupId}</groupId>
                                     <version>${project.version}</version>
                                     <file>pom.xml</file>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <!-- This profile deploys a ZIP to nexus releases repository -->
+        <profile>
+            <id>deploy-zip-nexus-release</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-deploy-plugin</artifactId>
+                        <version>2.8.2</version>
+                        <executions>
+                            <execution>
+                                <id>deploy-package</id>
+                                <phase>install</phase>
+                                <goals>
+                                    <goal>deploy-file</goal>
+                                </goals>
+                                <configuration>
+                                    <repositoryId>danta-releases</repositoryId>
+                                    <packaging>zip</packaging>
+                                    <url>${nexus.releases.url}</url>
+                                    <artifactId>${project.artifactId}</artifactId>
+                                    <groupId>${project.groupId}</groupId>
+                                    <version>${project.version}</version>
+                                    <file>target/${project.artifactId}-${project.version}.zip</file>
                                 </configuration>
                             </execution>
                         </executions>
