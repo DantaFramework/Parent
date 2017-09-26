@@ -524,7 +524,13 @@
             <url>http://repo.tikaltechnologies.io/repository/danta-group/</url>
         </repository>
     </repositories>
-
+    <pluginRepositories>
+        <pluginRepository>
+            <id>danta-nexus</id>
+            <name>Danta Repository</name>
+            <url>http://repo.tikaltechnologies.io/repository/danta-group/</url>
+        </pluginRepository>
+    </pluginRepositories>
     <distributionManagement>
         <snapshotRepository>
             <id>danta-snapshots</id>
