@@ -111,6 +111,50 @@
                 <groupId>org.apache.felix</groupId>
                 <artifactId>maven-scr-plugin</artifactId>
             </plugin>
+            <plugin>
+                <groupId>org.jahia.server</groupId>
+                <artifactId>jahia-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>jahia-version</id>
+                        <goals>
+                            <goal>jahia-version</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>native2ascii</id>
+                        <goals>
+                            <goal>native2ascii</goal>
+                        </goals>
+                        <configuration>
+                            <includes>resources/*.properties</includes>
+                            <defaultPropertiesFileLocale>en</defaultPropertiesFileLocale>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>package-imports</id>
+                        <goals>
+                            <goal>package-imports</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>prepare-package-dependencies</id>
+                        <goals>
+                            <goal>dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <contentDefinitionCapabilitiesActivated>true</contentDefinitionCapabilitiesActivated>
+                        </configuration>
+                        <phase>prepare-package</phase>
+                    </execution>
+                    <execution>
+                        <id>verify-package-dependencies</id>
+                        <goals>
+                            <goal>check-dependencies</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
     <profiles>
@@ -515,7 +559,6 @@
             <classifier>apis</classifier>
             <scope>provided</scope>
         </dependency>
-
     </dependencies>
     <repositories>
         <repository>
@@ -530,6 +573,18 @@
             <name>Danta Repository</name>
             <url>http://repo.tikaltechnologies.io/repository/danta-group/</url>
         </pluginRepository>
+        <pluginRepository>
+            <id>jahia-public</id>
+            <name>Jahia Public Repository</name>
+            <url>https://devtools.jahia.com/nexus/content/groups/public</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
     </pluginRepositories>
     <distributionManagement>
         <snapshotRepository>
@@ -541,5 +596,4 @@
             <url>${nexus.releases.url}</url>
         </repository>
     </distributionManagement>
-
 </project>
