@@ -24,7 +24,33 @@
     <artifactId>Parent</artifactId>
     <version>1.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
+
     <name>Danta Parent</name>
+    <description>The maven parent to most Danta projects</description>
+    <url>https://github.com/DantaFramework/Parent</url>
+
+    <licenses>
+        <license>
+            <name>GNU AFFERO GENERAL PUBLIC LICENSE</name>
+            <url>https://www.gnu.org/licenses/gpl-3.0.html</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Tikal Technologies Core Team</name>
+            <email>support@tikaltechnologies.io</email>
+            <organization>Tikal Technologies, Inc</organization>
+            <organizationUrl>https://tikaltechnologies.io/</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/DantaFramework/Parent.git</connection>
+        <developerConnection>scm:git:ssh://github.com/DantaFramework/Parent.git</developerConnection>
+        <url>https://github.com/DantaFramework/Parent/tree/master</url>
+    </scm>
+
     <properties>
         <!-- Properties for deployment to AEM-->
         <aem.server>http://localhost:4502</aem.server>
