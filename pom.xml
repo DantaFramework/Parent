@@ -111,50 +111,6 @@
                 <groupId>org.apache.felix</groupId>
                 <artifactId>maven-scr-plugin</artifactId>
             </plugin>
-            <plugin>
-                <groupId>org.jahia.server</groupId>
-                <artifactId>jahia-maven-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>jahia-version</id>
-                        <goals>
-                            <goal>jahia-version</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>native2ascii</id>
-                        <goals>
-                            <goal>native2ascii</goal>
-                        </goals>
-                        <configuration>
-                            <includes>resources/*.properties</includes>
-                            <defaultPropertiesFileLocale>en</defaultPropertiesFileLocale>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>package-imports</id>
-                        <goals>
-                            <goal>package-imports</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>prepare-package-dependencies</id>
-                        <goals>
-                            <goal>dependencies</goal>
-                        </goals>
-                        <configuration>
-                            <contentDefinitionCapabilitiesActivated>true</contentDefinitionCapabilitiesActivated>
-                        </configuration>
-                        <phase>prepare-package</phase>
-                    </execution>
-                    <execution>
-                        <id>verify-package-dependencies</id>
-                        <goals>
-                            <goal>check-dependencies</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
         </plugins>
     </build>
     <profiles>
@@ -367,6 +323,31 @@
                                     <groupId>${project.groupId}</groupId>
                                     <version>${project.version}</version>
                                     <file>target/${project.artifactId}-${project.version}.zip</file>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>deploy-jahia</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.sling</groupId>
+                        <artifactId>maven-sling-plugin</artifactId>
+                        <version>2.1.8</version>
+                        <executions>
+                            <execution>
+                                <id>install-bundle</id>
+                                <goals>
+                                    <goal>install</goal>
+                                </goals>
+                                <configuration>
+                                    <slingUrl>${jahia.slingURL}</slingUrl>
+                                    <user>${jahia.username}</user>
+                                    <password>${jahia.password}</password>
                                 </configuration>
                             </execution>
                         </executions>
