@@ -42,6 +42,13 @@
         <!--jgitflow properties -->
         <project.dev.version></project.dev.version>
         <project.release.version></project.release.version>
+
+        <!-- Properties for deployment to Jahia-->
+        <jahia.username>jahia</jahia.username>
+        <jahia.password>password</jahia.password>
+        <jahia.server>http://localhost:8080</jahia.server>
+        <jahia.slingURL>${jahia.server}/tools/osgi/console/install</jahia.slingURL>
+
     </properties>
     <build>
         <pluginManagement>
