@@ -42,6 +42,13 @@
         <!--jgitflow properties -->
         <project.dev.version></project.dev.version>
         <project.release.version></project.release.version>
+
+        <!-- Properties for deployment to Jahia-->
+        <jahia.username>jahia</jahia.username>
+        <jahia.password>password</jahia.password>
+        <jahia.server>http://localhost:8080</jahia.server>
+        <jahia.slingURL>${jahia.server}/tools/osgi/console/install</jahia.slingURL>
+
     </properties>
     <build>
         <pluginManagement>
@@ -330,6 +337,31 @@
                 </plugins>
             </build>
         </profile>
+        <profile>
+            <id>deploy-jahia</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.sling</groupId>
+                        <artifactId>maven-sling-plugin</artifactId>
+                        <version>2.1.8</version>
+                        <executions>
+                            <execution>
+                                <id>install-bundle</id>
+                                <goals>
+                                    <goal>install</goal>
+                                </goals>
+                                <configuration>
+                                    <slingUrl>${jahia.slingURL}</slingUrl>
+                                    <user>${jahia.username}</user>
+                                    <password>${jahia.password}</password>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
     </profiles>
     <dependencies>
         <!-- handlebars -->
@@ -515,7 +547,6 @@
             <classifier>apis</classifier>
             <scope>provided</scope>
         </dependency>
-
     </dependencies>
     <repositories>
         <repository>
@@ -541,5 +572,4 @@
             <url>${nexus.releases.url}</url>
         </repository>
     </distributionManagement>
-
 </project>
