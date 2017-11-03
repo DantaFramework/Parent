@@ -561,18 +561,6 @@
             <name>Danta Repository</name>
             <url>http://repo.tikaltechnologies.io/repository/danta-group/</url>
         </pluginRepository>
-        <pluginRepository>
-            <id>jahia-public</id>
-            <name>Jahia Public Repository</name>
-            <url>https://devtools.jahia.com/nexus/content/groups/public</url>
-            <releases>
-                <enabled>true</enabled>
-                <updatePolicy>never</updatePolicy>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </pluginRepository>
     </pluginRepositories>
     <distributionManagement>
         <snapshotRepository>
