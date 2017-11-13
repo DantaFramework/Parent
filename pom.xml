@@ -355,6 +355,8 @@
                                     <slingUrl>${jahia.slingURL}</slingUrl>
                                     <user>${jahia.username}</user>
                                     <password>${jahia.password}</password>
+                                    <refreshPackages>true</refreshPackages>
+                                    <bundleStartLevel>80</bundleStartLevel>
                                 </configuration>
                             </execution>
                         </executions>
