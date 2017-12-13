@@ -1,6 +1,7 @@
 # Changelog
 
 ### Unreleased
+- No visible changes.
 
 ### 1.0.1
 - Changed project groupId from "danta" to "io.tikaltechnologies.danta".
