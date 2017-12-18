@@ -57,13 +57,6 @@
         <slingURL>${aem.server}/system/console/install</slingURL>
         <aem.username>admin</aem.username>
         <aem.password>admin</aem.password>
-        <targetJVM>1.8</targetJVM>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
-        <!-- Nexus properties -->
-        <nexus.snapshots.url>http://repo.tikaltechnologies.io/repository/danta-snapshots/</nexus.snapshots.url>
-        <nexus.releases.url>http://repo.tikaltechnologies.io/repository/danta-releases/</nexus.releases.url>
 
         <!--jgitflow properties -->
         <project.dev.version></project.dev.version>
@@ -75,6 +68,19 @@
         <jahia.server>http://localhost:8080</jahia.server>
         <jahia.slingURL>${jahia.server}/tools/osgi/console/install</jahia.slingURL>
 
+        <!-- Properties for deployment to Karaf-->
+        <karaf.username>karaf</karaf.username>
+        <karaf.password>karaf</karaf.password>
+        <karaf.server>http://localhost:8181</karaf.server>
+        <karaf.karafURL>${karaf.server}/system/console/install</karaf.karafURL>
+
+        <!-- Nexus properties -->
+        <nexus.snapshots.url>http://repo.tikaltechnologies.io/repository/danta-snapshots/</nexus.snapshots.url>
+        <nexus.releases.url>http://repo.tikaltechnologies.io/repository/danta-releases/</nexus.releases.url>
+
+        <targetJVM>1.8</targetJVM>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
     <build>
         <pluginManagement>
@@ -175,6 +181,32 @@
                                     <slingUrl>${slingURL}</slingUrl>
                                     <user>${aem.username}</user>
                                     <password>${aem.password}</password>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <!-- This profile deploys the bundle to Karaf -->
+        <profile>
+            <id>deploy-karaf</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.sling</groupId>
+                        <artifactId>maven-sling-plugin</artifactId>
+                        <version>2.1.8</version>
+                        <executions>
+                            <execution>
+                                <id>install-bundle</id>
+                                <goals>
+                                    <goal>install</goal>
+                                </goals>
+                                <configuration>
+                                    <slingUrl>${karaf.karafURL}</slingUrl>
+                                    <user>${karaf.username}</user>
+                                    <password>${karaf.password}</password>
                                 </configuration>
                             </execution>
                         </executions>
