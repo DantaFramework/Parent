@@ -1,7 +1,7 @@
 # Changelog
 
 ### Unreleased
-- No visible changes.
+- Added “deploy-karaf” profile to deploy bundles to Karaf.
 
 ### 1.0.1
 - Changed project groupId from "danta" to "io.tikaltechnologies.danta".
