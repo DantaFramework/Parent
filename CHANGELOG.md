@@ -1,6 +1,7 @@
 # Changelog
 
 ### Unreleased
+- Change dependencies to use OSGi Declarative Services annotations instead Felix SCR annotations.
 - Added “deploy-karaf” profile to deploy bundles to Karaf.
 
 ### 1.0.1
