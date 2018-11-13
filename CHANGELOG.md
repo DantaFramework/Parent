@@ -1,6 +1,9 @@
 # Changelog
 
 ### Unreleased
+- No visible changes.
+
+### 1.0.2
 - Added “deploy-karaf” profile to deploy bundles to Karaf.
 
 ### 1.0.1
